@@ -1,0 +1,182 @@
+html {
+	color: #474a4c;
+	font-size: 12px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content-main {
+	display: flex;
+}
+
+.content-left {
+	padding: 45px;
+    width: 25%;
+    position: relative;
+    display: inline-block;
+}
+
+.content-right {
+	padding: 45px;
+    width: 75%;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+	width: 260px;
+	max-width:100%;
+}
+
+.profile-pic img {
+	max-width:100%;
+	border-radius: 5px;
+}
+
+.profile-name {
+	font-size: 26px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.profile-userId {
+	font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.profile-follow {
+	text-align: center;
+    line-height: 40px;
+    background: #cfd5da99;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.profile-follow:hover {
+	background: #8e939899;
+}
+
+.profile-info {
+	padding: 15px 0px;
+    margin-bottom: 15px;
+}
+.profile-other-info {
+	list-style-type: none;
+	padding: 20px 0;
+}
+
+.profile-other-info img {
+	width: 25px;
+}
+
+.profile-repos {
+    padding: 25px 10px;
+    border-top: 1px solid #c1bcbc;
+}
+
+.repo-name {
+	color: #0366d6;
+	font-size: 18px;
+}
+
+.repo-name h3 {
+	margin-bottom: 10px;
+}
+
+.repo-description {
+	margin-bottom: 10px;
+}
+
+.repo-language {
+	margin: 0 10px 0 20px;
+}
+
+.language-icon {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+
+.language-icon-html {
+	background-color: #e22323;
+}
+
+.language-icon-javascript {
+	background-color: #6b1d6b;
+}
+
+.language-icon-css {
+	background-color: #f5f526;
+}
+
+.search {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.search input, select {
+	padding: 10px 15px;
+    border-radius: 5px;
+    font-size: initial;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.profile-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tablink {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 14px;
+}
+
+.tablink-selected {
+	font-weight: bold;
+	border-bottom: 2px solid #e36209;
+}
+
+.tablink span {
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,.08);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-main {
+    	display: block;
+    }
+
+	.content-left {
+		padding: 45px;
+	    width: 50%;
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.content-right {
+		padding: 45px;
+	    width: 50%;
+	    position: relative;
+	    display: inline-block;
+	}
+}
